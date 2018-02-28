@@ -4,17 +4,18 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>bentutu</title>
+    <title>移动自适应布局实现 | bentutu</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
     
     <meta name="author" content="BenTuTu">
     
-    <meta name="description" content="һ��ʹ��easy mockģ������   
-   easy mock���ӵ�ַ
-�����Լ�д�ƶ�����Ӧ����- �Լ���д��Ҫ������rem���п��դ�񲼾֣�
+    <meta name="description" content="一、使用easy mock模拟数据   
+   easy mock链接地址
+二、自己写移动自适应布局- 自己编写主要是利用rem进行宽度栅格布局：
 
    html {
-        /* �൱��һ��������������pc�Լ��ƶ��˶�">
+        /* 相当于一个界面适配器，pc以及移动端都可以进行设置 */
+        font-size: 37.5px">
     
     
     
@@ -93,10 +94,10 @@ var _hmt = _hmt || [];
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2018/02/28/移动自适应/" title="" itemprop="url"></a>
+      <a href="/2018/02/28/移动自适应布局实现/" title="移动自适应布局实现" itemprop="url">移动自适应布局实现</a>
   </h1>
   <p class="article-time">
-    <time datetime="2018-02-28T08:05:23.275Z" itemprop="datePublished">2018 2 28</time>
+    <time datetime="2018-02-28T08:08:32.000Z" itemprop="datePublished">2018 2 28</time>
   </p>
 </header>
 	<div class="article-content">
@@ -104,20 +105,20 @@ var _hmt = _hmt || [];
 		
 		<div id="toc" class="toc-article">
 			<strong class="toc-title"></strong>
-		<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#һ��ʹ��easy-mockg������"><span class="toc-number">1.</span> <span class="toc-text">һ��ʹ��easy mockģ������</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#�����Լ�д�z�����Ӧ����"><span class="toc-number">2.</span> <span class="toc-text">�����Լ�д�ƶ�����Ӧ����</span></a></li></ol>
+		<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#一、使用easy-mock模拟数据"><span class="toc-number">1.</span> <span class="toc-text">一、使用easy mock模拟数据</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#二、自己写移动自适应布局"><span class="toc-number">2.</span> <span class="toc-text">二、自己写移动自适应布局</span></a></li></ol>
 		</div>
 		
-		<h1 id="һ��ʹ��easy-mockg������"><a href="#һ��ʹ��easy-mockg������" class="headerlink" title="һ��ʹ��easy mockģ������"></a>һ��ʹ��easy mockģ������</h1><p>   <img src="/img/bVYFhp" alt="clipboard.png"></p>
-<p>   <a href="http://www.easy-mock.com/mock/5a09aaeb7b68855a07f77882/ajaxWriterData/getWriterData" target="_blank" rel="noopener">easy mock���ӵ�ַ</a></p>
-<h1 id="�����Լ�д�z�����Ӧ����"><a href="#�����Լ�д�z�����Ӧ����" class="headerlink" title="�����Լ�д�ƶ�����Ӧ����"></a>�����Լ�д�ƶ�����Ӧ����</h1><pre><code>- �Լ���д��Ҫ������rem���п��դ�񲼾֣�
+		<h1 id="一、使用easy-mock模拟数据"><a href="#一、使用easy-mock模拟数据" class="headerlink" title="一、使用easy mock模拟数据"></a>一、使用easy mock模拟数据</h1><p>   <img src="/img/bVYFhp" alt="clipboard.png"></p>
+<p>   <a href="http://www.easy-mock.com/mock/5a09aaeb7b68855a07f77882/ajaxWriterData/getWriterData" target="_blank" rel="noopener">easy mock链接地址</a></p>
+<h1 id="二、自己写移动自适应布局"><a href="#二、自己写移动自适应布局" class="headerlink" title="二、自己写移动自适应布局"></a>二、自己写移动自适应布局</h1><pre><code>- 自己编写主要是利用rem进行宽度栅格布局：
 
    html {
-        /* �൱��һ��������������pc�Լ��ƶ��˶����Խ������� */
+        /* 相当于一个界面适配器，pc以及移动端都可以进行设置 */
         font-size: 37.5px;
     }
 
     .box, .box1, .box2 {
-        /* remΪ��Ե�λ �������ƶ����� ����ڸ�Դ��Ϊhtml */
+        /* rem为相对单位 适用于移动开发 相对于根源即为html */
         width: 10rem;
         height: 3rem;
         background-color: red;
@@ -133,29 +134,29 @@ var _hmt = _hmt || [];
         background-color: pink;
     }
      .box1, .box2 {
-         /* inline Ԫ�ز������ÿ�� */
-         /* bug���Ա�Ԫ�ػ���һЩ��϶ ���绻�� */
+         /* inline 元素不能设置宽高 */
+         /* bug与旁边元素会有一些间隙 例如换行 */
          display: inline-block;
      }
 
-- body���ӵİڷţ�
+- body盒子的摆放：
     &lt;div class=&quot;box&quot;&gt;&lt;/div&gt;
     &lt;div class=&quot;box1&quot;&gt;&lt;/div&gt;&lt;div class=&quot;box2&quot;&gt;&lt;/div&gt;         
- ** ע��:��ʱ��box1��box2��Ҫ�м�û�з�϶Ҳ���ǿո��еȶ����ܳ��֣������������ֲ���ʵ��**
- **      �Զ���Ӧ���ֵ�Ҫ����������ô����Լ�ʵ��һ��Ч����**
-- Ч��ͼ��
+ ** 注意:此时的box1和box2需要中间没有缝隙也就是空格换行等都不能出现，如果出现则出现不能实现**
+ **      自动适应布局的要求，这个可以用代码自己实现一下效果。**
+- 效果图：
 
  ![clipboard.png](/img/bVYFsD)
 
- ���ʱЧ����
+ 变大时效果：
 
  ![clipboard.png](/img/bVYFtl)
-</code></pre><p>#jsʵ�־��������µļ��ƶ����֣�</p>
-<pre><code>- js���
+</code></pre><p>#js实现掘金个人文章的简单移动布局：</p>
+<pre><code>- js框架
      &lt;script src=&quot;http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??    
      flexible_css.js,flexible.js&quot;&gt;&lt;/script&gt;
 
-- ���沼�֣�
+- 界面布局：
     &lt;div id=&quot;app&quot;&gt;
     &lt;div class=&quot;authordmassage&quot; id=&quot;authord&quot;&gt;
         &lt;img src=&quot;&quot; alt=&quot;&quot; class=&quot;authordphoto&quot;&gt;
@@ -177,7 +178,7 @@ var _hmt = _hmt || [];
     &lt;/div&gt;
     &lt;/div&gt;
 
-- ʹ��jqueryʵ�����ݻ�ȡ���ü������û�ȡ�����ݵ�ǰ̨��ʾ��
+- 使用jquery实现数据获取和用级联设置获取的数据到前台显示：
     ```$(function () {
         $.getJSON(&quot;http://www.easy-mock.com/mock/5a09aaeb7b68855a07f77882/ajaxWriterData/getWriterData&quot;, function (data) {
             console.log(data.data.passageImage.imageone);
@@ -186,7 +187,7 @@ var _hmt = _hmt || [];
             $(&#39;#authord&#39;).find(&#39;#authordid&#39;).text(data.data.author.authorID);
             $(&#39;#authord&#39;).find(&#39;#allcontent&#39;).text(data.data.author.allcontent);
             // console.log($(&#39;#mainlib&#39;).find(&#39;ul&#39;).find(&#39;li&#39;).find(&#39;#passageimage1&#39;));
-            //��ȡ������Ϣ
+            //获取文章信息
             $(&#39;#mainlib&#39;).find(&#39;ul&#39;).find(&#39;#passageimage1&#39;).find(&#39;a&#39;).text(data.data.artical[0].title);
             $(&#39;#mainlib&#39;).find(&#39;ul&#39;).find(&#39;#passageimage1&#39;).find(&#39;img&#39;).attr(&#39;src&#39;, data.data.passageImage.imageone);
             $(&#39;#mainlib&#39;).find(&#39;ul&#39;).find(&#39;#passageimage2&#39;).find(&#39;a&#39;).text(data.data.artical[1].title);
@@ -194,16 +195,16 @@ var _hmt = _hmt || [];
             })
         })```
 
-- Ч��ͼ��
+- 效果图：
 
 
    ![clipboard.png](/img/bVYFCd)
 
 
-- �ļ���
+- 文件：
     &lt;script src=&quot;https://cdn.bootcss.com/jquery/3.2.1/jquery.js&quot;&gt;&lt;/script&gt;
-   [jquery�ļ��汾���ص�ַ][2]    
-</code></pre><p><strong> �˴εĹ����ƶ�������Ӧѧϰ�ͷ��������Щ���������Ļ���ѧ��һ��ѧϰ��������Ǳ���Ľ��� </strong></p>
+   [jquery文件版本下载地址][2]    
+</code></pre><p><strong> 此次的关于移动端自适应学习和分享就是这些，望看到的伙伴和学者一起学习和提出你们宝贵的建议 </strong></p>
   
 	</div>
 		<footer class="article-footer clearfix">
@@ -213,7 +214,7 @@ var _hmt = _hmt || [];
 
 <div class="article-share" id="share">
 
-  <div data-url="http://bentutu.github.io/2018/02/28/移动自适应/" data-title="bentutu" data-tsina="" class="share clearfix">
+  <div data-url="http://bentutu.github.io/2018/02/28/移动自适应布局实现/" data-title="移动自适应布局实现 | bentutu" data-tsina="" class="share clearfix">
   </div>
 
 </div>
@@ -222,19 +223,11 @@ var _hmt = _hmt || [];
 	
 <nav class="article-nav clearfix">
  
- <div class="prev" >
- <a href="/2018/02/28/移动自适应布局实现/" title="移动自适应布局实现">
-  <strong>新一篇:</strong><br/>
-  <span>
-  移动自适应布局实现</span>
-</a>
-</div>
-
 
 <div class="next">
-<a href="/2018/01/18/hello-world/"  title="Hello World">
+<a href="/2018/02/28/移动自适应/"  title="">
  <strong>旧一篇:</strong><br/> 
- <span>Hello World
+ <span>(no title)
 </span>
 </a>
 </div>
@@ -244,7 +237,7 @@ var _hmt = _hmt || [];
 	
 <section class="comment">
 	
-	<div class="ds-thread" data-title="" data-thread-key="移动自适应" data-author-key="BenTuTu" data-url="http://bentutu.github.io/post/移动自适应"></div>
+	<div class="ds-thread" data-title="移动自适应布局实现" data-thread-key="移动自适应布局实现" data-author-key="BenTuTu" data-url="http://bentutu.github.io/post/移动自适应布局实现"></div>
 	
 </section>
 
