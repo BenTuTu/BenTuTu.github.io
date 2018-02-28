@@ -1,0 +1,446 @@
+
+ <!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  
+    <title>bentutu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
+    
+    <meta name="author" content="BenTuTu">
+    
+    <meta name="description" content="һ��ʹ��easy mockģ������   
+   easy mock���ӵ�ַ
+�����Լ�д�ƶ�����Ӧ����- �Լ���д��Ҫ������rem���п��դ�񲼾֣�
+
+   html {
+        /* �൱��һ��������������pc�Լ��ƶ��˶�">
+    
+    
+    
+    
+    <link rel="alternative" href="/Tinnypp/atom.xml" title="bentutu" type="application/atom+xml">
+    
+    
+    <link rel="icon" href="/img/favico.ico">
+    
+    
+    <link rel="apple-touch-icon" href="/img/picture.jpg">
+    <link rel="apple-touch-icon-precomposed" href="/img/picture.jpg">
+    
+
+  
+    <link href="/css/font-awesome.min.css" rel="stylesheet">
+    
+  
+
+    <link rel="stylesheet" href="/css/style.css">
+    <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?d182ed77fc48758bf45a33835ee35745";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+      <script type="text/javascript">
+  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+  (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+  e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+  })(window,document,'script','//s.swiftypecdn.com/install/v1/st.js','_st');
+
+  _st('install','.............Add your swiftype userID...............');
+</script>
+</head>
+
+  <body>
+    <header>
+      <div>
+		
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="bentutu">bentutu</a></h1>
+				<h2 class="blog-motto"></h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜单">
+			</a></div>
+			<nav class="animated">
+				<ul>
+                    <ul>
+					 
+						<li><a href="https://bentutu.github.io">Home</a></li>
+					
+						<li><a href="/Tinnypp/archives">Archives</a></li>
+					
+					<li>
+					
+						<form class="search" action="/search/index.html" method="get" accept-charset="utf-8">
+						<label>Search</label>
+						<input type="text" id="st-search-inpu" maxlength="20" placeholder="Search" />
+						</form>
+					
+					</li>
+                <!--<li><div class="closeaside"><a class="closebutton" href="#" title="隐藏侧边栏"></a></div></li>-->
+
+				</ul>
+			</nav>	
+</div>
+    </header>
+    <div id="container" class="clearfix">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2018/02/28/移动自适应/" title="" itemprop="url"></a>
+  </h1>
+  <p class="article-time">
+    <time datetime="2018-02-28T08:05:23.275Z" itemprop="datePublished">2018 2 28</time>
+  </p>
+</header>
+	<div class="article-content">
+		
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title"></strong>
+		<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#һ��ʹ��easy-mockg������"><span class="toc-number">1.</span> <span class="toc-text">һ��ʹ��easy mockģ������</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#�����Լ�д�z�����Ӧ����"><span class="toc-number">2.</span> <span class="toc-text">�����Լ�д�ƶ�����Ӧ����</span></a></li></ol>
+		</div>
+		
+		<h1 id="һ��ʹ��easy-mockg������"><a href="#һ��ʹ��easy-mockg������" class="headerlink" title="һ��ʹ��easy mockģ������"></a>һ��ʹ��easy mockģ������</h1><p>   <img src="/img/bVYFhp" alt="clipboard.png"></p>
+<p>   <a href="http://www.easy-mock.com/mock/5a09aaeb7b68855a07f77882/ajaxWriterData/getWriterData" target="_blank" rel="noopener">easy mock���ӵ�ַ</a></p>
+<h1 id="�����Լ�д�z�����Ӧ����"><a href="#�����Լ�д�z�����Ӧ����" class="headerlink" title="�����Լ�д�ƶ�����Ӧ����"></a>�����Լ�д�ƶ�����Ӧ����</h1><pre><code>- �Լ���д��Ҫ������rem���п��դ�񲼾֣�
+
+   html {
+        /* �൱��һ��������������pc�Լ��ƶ��˶����Խ������� */
+        font-size: 37.5px;
+    }
+
+    .box, .box1, .box2 {
+        /* remΪ��Ե�λ �������ƶ����� ����ڸ�Դ��Ϊhtml */
+        width: 10rem;
+        height: 3rem;
+        background-color: red;
+    }
+
+    .box1 {
+        background-color: blue;
+        width: 3rem;
+    }
+
+    .box2 {
+        width: 7rem;
+        background-color: pink;
+    }
+     .box1, .box2 {
+         /* inline Ԫ�ز������ÿ�� */
+         /* bug���Ա�Ԫ�ػ���һЩ��϶ ���绻�� */
+         display: inline-block;
+     }
+
+- body���ӵİڷţ�
+    &lt;div class=&quot;box&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;box1&quot;&gt;&lt;/div&gt;&lt;div class=&quot;box2&quot;&gt;&lt;/div&gt;         
+ ** ע��:��ʱ��box1��box2��Ҫ�м�û�з�϶Ҳ���ǿո��еȶ����ܳ��֣������������ֲ���ʵ��**
+ **      �Զ���Ӧ���ֵ�Ҫ����������ô����Լ�ʵ��һ��Ч����**
+- Ч��ͼ��
+
+ ![clipboard.png](/img/bVYFsD)
+
+ ���ʱЧ����
+
+ ![clipboard.png](/img/bVYFtl)
+</code></pre><p>#jsʵ�־��������µļ��ƶ����֣�</p>
+<pre><code>- js���
+     &lt;script src=&quot;http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??    
+     flexible_css.js,flexible.js&quot;&gt;&lt;/script&gt;
+
+- ���沼�֣�
+    &lt;div id=&quot;app&quot;&gt;
+    &lt;div class=&quot;authordmassage&quot; id=&quot;authord&quot;&gt;
+        &lt;img src=&quot;&quot; alt=&quot;&quot; class=&quot;authordphoto&quot;&gt;
+        &lt;a href=&quot;&quot;&gt;&lt;/a&gt;
+        &lt;span id=&quot;authordid&quot; class=&quot;authordidclass&quot;&gt;&lt;/span&gt;
+        &lt;span id=&quot;allcontent&quot; class=&quot;allcontentclass&quot;&gt;&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;authorartical&quot; id=&quot;mainlib&quot;&gt;
+        &lt;ul&gt;
+            &lt;li id=&quot;passageimage1&quot;&gt;
+                &lt;img src=&quot;&quot; alt=&quot;&quot;&gt;
+                &lt;a href=&quot;&quot;&gt;&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li id=&quot;passageimage2&quot; class=&quot;passageimage2&quot;&gt;
+                &lt;img src=&quot;&quot; alt=&quot;&quot;&gt;
+                &lt;a href=&quot;&quot;&gt;&lt;/a&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+
+- ʹ��jqueryʵ�����ݻ�ȡ���ü������û�ȡ�����ݵ�ǰ̨��ʾ��
+    ```$(function () {
+        $.getJSON(&quot;http://www.easy-mock.com/mock/5a09aaeb7b68855a07f77882/ajaxWriterData/getWriterData&quot;, function (data) {
+            console.log(data.data.passageImage.imageone);
+            $(&#39;#authord&#39;).find(&#39;img&#39;).attr(&#39;src&#39;, data.data.author.avatar);
+            $(&#39;#authord&#39;).find(&#39;a&#39;).text(data.data.author.authorname);
+            $(&#39;#authord&#39;).find(&#39;#authordid&#39;).text(data.data.author.authorID);
+            $(&#39;#authord&#39;).find(&#39;#allcontent&#39;).text(data.data.author.allcontent);
+            // console.log($(&#39;#mainlib&#39;).find(&#39;ul&#39;).find(&#39;li&#39;).find(&#39;#passageimage1&#39;));
+            //��ȡ������Ϣ
+            $(&#39;#mainlib&#39;).find(&#39;ul&#39;).find(&#39;#passageimage1&#39;).find(&#39;a&#39;).text(data.data.artical[0].title);
+            $(&#39;#mainlib&#39;).find(&#39;ul&#39;).find(&#39;#passageimage1&#39;).find(&#39;img&#39;).attr(&#39;src&#39;, data.data.passageImage.imageone);
+            $(&#39;#mainlib&#39;).find(&#39;ul&#39;).find(&#39;#passageimage2&#39;).find(&#39;a&#39;).text(data.data.artical[1].title);
+            $(&#39;#mainlib&#39;).find(&#39;ul&#39;).find(&#39;#passageimage2&#39;).find(&#39;img&#39;).attr(&#39;src&#39;, data.data.passageImage.imagetwo);
+            })
+        })```
+
+- Ч��ͼ��
+
+
+   ![clipboard.png](/img/bVYFCd)
+
+
+- �ļ���
+    &lt;script src=&quot;https://cdn.bootcss.com/jquery/3.2.1/jquery.js&quot;&gt;&lt;/script&gt;
+   [jquery�ļ��汾���ص�ַ][2]    
+</code></pre><p><strong> �˴εĹ����ƶ�������Ӧѧϰ�ͷ��������Щ���������Ļ���ѧ��һ��ѧϰ��������Ǳ���Ľ��� </strong></p>
+  
+	</div>
+		<footer class="article-footer clearfix">
+
+
+
+
+<div class="article-share" id="share">
+
+  <div data-url="http://bentutu.github.io/2018/02/28/移动自适应/" data-title="bentutu" data-tsina="" class="share clearfix">
+  </div>
+
+</div>
+</footer>   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+ <div class="prev" >
+ <a href="/2018/02/28/移动自适应布局实现/" title="移动自适应布局实现">
+  <strong>新一篇:</strong><br/>
+  <span>
+  移动自适应布局实现</span>
+</a>
+</div>
+
+
+<div class="next">
+<a href="/2018/01/18/hello-world/"  title="Hello World">
+ <strong>旧一篇:</strong><br/> 
+ <span>Hello World
+</span>
+</a>
+</div>
+
+</nav>
+
+	
+<section class="comment">
+	
+	<div class="ds-thread" data-title="" data-thread-key="移动自适应" data-author-key="BenTuTu" data-url="http://bentutu.github.io/post/移动自适应"></div>
+	
+</section>
+
+
+</div>  
+    </div>
+    <footer><div id="footer" >
+	<div class="copyright">
+		<p>Go to his github ,please click here</p>
+		<a href="https://github.com/bentutu">bentutu</a>.</span>
+		
+			<span>© BenTuTu</span>
+		
+	<div>
+</div></footer>
+    <script src="/js/jquery-2.1.0.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  //back to top
+  function backToTop(){
+    var buttonHTML = $("<a href=\"#top\" id=\"back-top\">" + "<span>Back to Top</span></a>");
+    buttonHTML.appendTo($("body"));
+    var buttonToTop = $("#back-top");
+    // hide #back-top first
+    buttonToTop.hide();
+
+    // fade in #back-top
+    $(function() {
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 200) {
+                buttonToTop.fadeIn();
+            } else {
+                buttonToTop.fadeOut();
+            }
+        });
+        // scroll body to 0px on click
+        buttonToTop.click(function() {
+            $('body,html').animate({
+                scrollTop: 0
+            }, 800);
+            return false;
+        });
+    });
+  }
+  backToTop();
+
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      ta = $('#toc.toc-aside');
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else
+    {
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+        
+    }
+  });
+
+  var show = true;
+  c.click(function(){
+    if(show == true){
+        a.addClass('fadeOut').css('display', 'none');
+        ta.css('display', 'block').addClass('fadeIn');
+        m.addClass('moveMain');  
+    }else{
+        a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');     
+        ta.css('display', 'none'); 
+        m.removeClass('moveMain');
+        $('#toc.toc-aside').css('display', 'none');
+    }
+    show = !show;
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      h  = $('article h2')
+      ah = $('article h2'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  if(ah.length==0){
+    t.css('display','none');
+  }else{
+
+    $(window).scroll(function(){
+      ta.css("top",Math.max(140,240-$(this).scrollTop()));
+    });
+  };
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina');
+  var html = [
+  '<a href="#" class="overlay" id="qrcode"></a>',
+  '<div class="qrcode clearfix"><span>扫描二维码分享到微信朋友圈</span><a class="qrclose" href="#share"></a><strong>Loading...Please wait</strong><img id="qrcode-pic" data-src="http://s.jiathis.com/qrcode.php?url=' + encodedUrl + '"/></div>',
+  '<a href="#textlogo" class="article-back-to-top" title="Top"></a>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="QRcode"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="Weibo"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+  $('.article-share-qrcode').click(function(){
+    var imgSrc = $('#qrcode-pic').attr('data-src');
+    $('#qrcode-pic').attr('src', imgSrc);
+    $('#qrcode-pic').load(function(){
+        $('.qrcode strong').text(' ');
+    });
+  });
+});     
+</script>
+
+
+<script type="text/javascript">
+  var duoshuoQuery = {short_name:"tinnypp"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = '//static.duoshuo.com/embed.js';    //change to ds.src = '/js/embed.js'; to add useragent for duoshuo
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] 
+    || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+</script> 
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.article-content').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      var alt = this.alt;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+}); 
+</script>
+
+<script type="text/javascript">
+  function footerPosition() {
+    var contentHeight = document.documentElement.scrollHeight,
+        winHeight = window.innerHeight;
+    if(contentHeight <= winHeight) {
+      $('footer').addClass('fixed-bottom');
+    } else {
+      $('footer').removeClass('fixed-bottom');
+    }
+  }
+  footerPosition();
+  $(window).resize(footerPosition);
+</script>
+
+
+  </body>
+</html>
