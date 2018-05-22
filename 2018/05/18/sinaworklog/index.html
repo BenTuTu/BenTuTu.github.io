@@ -16,7 +16,9 @@
 label {
   vertical-align: middle;
   display: inline-block;
-}">
+}
+2018.5.22
+让一个块级元素固">
     
     
     
@@ -106,7 +108,7 @@ var _hmt = _hmt || [];
 		
 		<div id="toc" class="toc-article">
 			<strong class="toc-title"></strong>
-		<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#2018-5-18-周五"><span class="toc-number">1.</span> <span class="toc-text">2018.5.18 周五</span></a></li></ol>
+		<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#2018-5-18-周五"><span class="toc-number">1.</span> <span class="toc-text">2018.5.18 周五</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2018-5-22"><span class="toc-number">2.</span> <span class="toc-text">2018.5.22</span></a></li></ol>
 		</div>
 		
 		<h1 id="2018-5-18-周五"><a href="#2018-5-18-周五" class="headerlink" title="2018.5.18 周五"></a>2018.5.18 周五</h1><ul>
@@ -117,7 +119,33 @@ label {
   vertical-align: middle;
   display: inline-block;
 }
+</code></pre><h1 id="2018-5-22"><a href="#2018-5-22" class="headerlink" title="2018.5.22"></a>2018.5.22</h1></li>
+<li>让一个块级元素固定位置<pre><code>.block {
+  position: fixed;
+  left: ;
+  top: ;
+}
 </code></pre></li>
+<li>在router-link时进行兄弟组件进行传递信息,简单需求如果使用vuex则大题小做<br>– parent<pre><code>&lt;b-component :msg=&quot;fromAComponent&quot;&gt;&lt;/b-component&gt;
+&lt;router-link @message=&quot;getMesg&quot;&gt;&lt;/router-link&gt;
+data() {
+  return {
+  fromAComponent: &#39;&#39;
+  }
+}
+methods:{
+  getMesg(data){
+  fromAComponent = data;
+      console.log(&quot;this data from a-component&quot;);
+  }
+}
+</code></pre>– son<pre><code>&lt;a-component&gt;&lt;/a-component&gt;
+mounted() {
+this.$emit(&quot;message&quot;, &quot;The message you want to transmit&quot;);
+{
+</code></pre>– son b-component<pre><code>props: [&#39;msg&#39;]
+</code></pre></li>
+<li>修改input或者其他元素的placeholder字体样式<br>a. input<br>::-webkit-input-placeholder{<br>  color: red;<br>  font-size: 20px;<br>  line-height: 50px;<br>}<br>b. 其他元素<br>元素名::-webkit-input-placeholder{<br>  color: red;<br>  font-size: 20px;<br>  line-height: 50px;<br>}</li>
 </ul>
   
 	</div>
