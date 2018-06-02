@@ -111,7 +111,7 @@ var _hmt = _hmt || [];
 		
 		<div id="toc" class="toc-article">
 			<strong class="toc-title"></strong>
-		<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#2018-5-18-周五"><span class="toc-number">1.</span> <span class="toc-text">2018.5.18 周五</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2018-5-22-周二"><span class="toc-number">2.</span> <span class="toc-text">2018.5.22 周二</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2018-5-23-周三"><span class="toc-number">3.</span> <span class="toc-text">2018.5.23 周三</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2018-5-28-周一"><span class="toc-number">4.</span> <span class="toc-text">2018.5.28 周一</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2018-6-1-周五"><span class="toc-number">5.</span> <span class="toc-text">2018.6.1 周五</span></a></li></ol>
+		<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#2018-5-18-周五"><span class="toc-number">1.</span> <span class="toc-text">2018.5.18 周五</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2018-5-22-周二"><span class="toc-number">2.</span> <span class="toc-text">2018.5.22 周二</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2018-5-23-周三"><span class="toc-number">3.</span> <span class="toc-text">2018.5.23 周三</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2018-5-28-周一"><span class="toc-number">4.</span> <span class="toc-text">2018.5.28 周一</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2018-6-1-周五"><span class="toc-number">5.</span> <span class="toc-text">2018.6.1 周五</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2018-6-2-周六"><span class="toc-number">6.</span> <span class="toc-text">2018.6.2 周六</span></a></li></ol>
 		</div>
 		
 		<h1 id="2018-5-18-周五"><a href="#2018-5-18-周五" class="headerlink" title="2018.5.18 周五"></a>2018.5.18 周五</h1><ul>
@@ -211,6 +211,33 @@ pickerPosition 设置选择器位置
 </code></pre></li>
 <li>设置形状和大小的渐变shape(circle, ellipse)size(closest-side, farthest,closest-corner,farthest-corner)<pre><code>  background: radial-gradient(center, shape size, start-color, ..., last-color);
 </code></pre></li>
+</ul>
+<h1 id="2018-6-2-周六"><a href="#2018-6-2-周六" class="headerlink" title="2018.6.2 周六"></a>2018.6.2 周六</h1><ul>
+<li><p>Ajax原理的实现</p>
+<ol>
+<li>创建Ajax对象，对特殊浏览器ie6进行适配<pre><code> if(XMLHttpRequest){
+     var ajax = new XMLHttpRequest();
+ }else {
+     var ajax = new ActiveXObject(&quot;Microsoft.XMLHTTP&quot;); 
+ }
+</code></pre></li>
+<li>与服务器建立连接<pre><code> ajax.open(&quot;获取的方式(GET,POST,PUTE,DELETE,UPDATE)&quot;, &quot;文件名&quot;, 是否异步(true or false));
+</code></pre></li>
+<li>发送请求<pre><code> ajax.send();
+</code></pre></li>
+<li>接收返回<pre><code> ajax.onreadystatechange = function() {
+     返回的数据获取
+ }
+</code></pre></li>
+</ol>
+</li>
+<li><p>Python爬虫入门</p>
+<ol>
+<li>xpath和requests进行HTML文件的获取；</li>
+<li>beautifulsoup对文档进行有效信息的选择；</li>
+<li>使用“非关系型数据库mongodb”对数据进行存储；</li>
+</ol>
+</li>
 </ul>
   
 	</div>
