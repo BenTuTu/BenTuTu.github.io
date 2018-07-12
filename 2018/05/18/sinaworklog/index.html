@@ -111,7 +111,7 @@ var _hmt = _hmt || [];
 		
 		<div id="toc" class="toc-article">
 			<strong class="toc-title"></strong>
-		<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#2018-5-18-周五"><span class="toc-number">1.</span> <span class="toc-text">2018.5.18 周五</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2018-5-22-周二"><span class="toc-number">2.</span> <span class="toc-text">2018.5.22 周二</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2018-5-23-周三"><span class="toc-number">3.</span> <span class="toc-text">2018.5.23 周三</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2018-5-28-周一"><span class="toc-number">4.</span> <span class="toc-text">2018.5.28 周一</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2018-6-1-周五"><span class="toc-number">5.</span> <span class="toc-text">2018.6.1 周五</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2018-6-2-周六"><span class="toc-number">6.</span> <span class="toc-text">2018.6.2 周六</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2018-6-4-周一"><span class="toc-number">7.</span> <span class="toc-text">2018.6.4 周一</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2018-6-25-周一"><span class="toc-number">8.</span> <span class="toc-text">2018.6.25 周一</span></a></li></ol>
+		<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#2018-5-18-周五"><span class="toc-number">1.</span> <span class="toc-text">2018.5.18 周五</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2018-5-22-周二"><span class="toc-number">2.</span> <span class="toc-text">2018.5.22 周二</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2018-5-23-周三"><span class="toc-number">3.</span> <span class="toc-text">2018.5.23 周三</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2018-5-28-周一"><span class="toc-number">4.</span> <span class="toc-text">2018.5.28 周一</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2018-6-1-周五"><span class="toc-number">5.</span> <span class="toc-text">2018.6.1 周五</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2018-6-2-周六"><span class="toc-number">6.</span> <span class="toc-text">2018.6.2 周六</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2018-6-4-周一"><span class="toc-number">7.</span> <span class="toc-text">2018.6.4 周一</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2018-6-25-周一"><span class="toc-number">8.</span> <span class="toc-text">2018.6.25 周一</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2018-7-10-周二"><span class="toc-number">9.</span> <span class="toc-text">2018.7.10 周二</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2018-7-11-周三"><span class="toc-number">10.</span> <span class="toc-text">2018.7.11 周三</span></a></li></ol>
 		</div>
 		
 		<h1 id="2018-5-18-周五"><a href="#2018-5-18-周五" class="headerlink" title="2018.5.18 周五"></a>2018.5.18 周五</h1><ul>
@@ -272,6 +272,40 @@ pickerPosition 设置选择器位置
   }
 </code></pre></li>
 <li>映射关系在视觉上代码量少很多，进行开发的时候需要对其进行良好的说明，使后来合作者或者迭代者能够很好的维护和阅读</li>
+<li>在filters里面最好不要调用method里面的函数或者异步获取后端数据（做请求）</li>
+</ul>
+<h1 id="2018-7-10-周二"><a href="#2018-7-10-周二" class="headerlink" title="2018.7.10 周二"></a>2018.7.10 周二</h1><ul>
+<li>class和style支持的动态绑定适用于数组、对象，在对他进行判断或者处理时可以很好的结合计算属性进行处理；</li>
+<li>动态绑定style时，会对其浏览器的类型自动添加前缀，很多css属性，如：transform、text-shadow等；</li>
+<li>vue会高效的复用相同的组件，这是一种很好的减少渲染的技巧，当我们需要不复用的时候我们只需要在我们想要的元素加上不同的key值就能达到效果；</li>
+<li>v-if和v-show都能达到影藏的效果，v-if可以使用v-else-if、v-else进行多级判断，也能使用在<template>中，v-show则不然；</template></li>
+</ul>
+<h1 id="2018-7-11-周三"><a href="#2018-7-11-周三" class="headerlink" title="2018.7.11 周三"></a>2018.7.11 周三</h1><ul>
+<li>input标签的@blur事件在输入框失去焦点时展示提示消息</li>
+<li><p>vue将表格数据导出Excel(下载好Blob.js和Export2Excel.js放在vendor文件夹下),在build—-webpack.base.conf.js中resolve的alias加入 ‘vendor’: path.resolve(__dirname, ‘../src/vendor’),</p>
+<pre><code>      npm install -S file-saver xlsx
+      npm install -D script-loader
+</code></pre><p>  导出Excel的两个方法（函数）：</p>
+<pre><code>      export2excel() {
+          require.ensure([], () =&gt; {
+             const { export_json_to_excel } = require(&#39;../../vendor/Export2Excel&#39;);
+             const tHeader = [&#39;&#39;, &#39;&#39;, &#39;&#39;];//表头信息数组
+             const filterVal = [&#39;&#39;, &#39;&#39;, &#39;&#39;];//对应表头数据的key
+             const list = this.tableData;//表头数据
+             const data = this.formatJson(filterVal, list);
+             export_json_to_excel(tHeader, data, &quot;Excel的文件名&quot;);
+          });
+      }
+
+      formatJson(filterVal, jsonData){
+          return jsonData.map(v =&gt; filterVal.map(j =&gt; v[j]);
+      }
+</code></pre></li>
+<li><p>父组件向子组件传递数据时，当时静态数据子组件可以直接获取，当父组件通过异步请求后端数据时，需要在子组件中使用watch监听数据的改变，根据导致的问题暂且理解为数组的引用赋值导致的：</p>
+<pre><code>      var a = [];//父组件的data中
+      var a = b; //b为父组件异步请求的数据
+      var c = a;//c子组件的props
+</code></pre></li>
 </ul>
   
 	</div>
@@ -291,19 +325,11 @@ pickerPosition 设置选择器位置
 	
 <nav class="article-nav clearfix">
  
- <div class="prev" >
- <a href="/2018/06/01/程序员成长路程/" title="程序员成长路程">
-  <strong>新一篇:</strong><br/>
-  <span>
-  程序员成长路程</span>
-</a>
-</div>
-
 
 <div class="next">
-<a href="/2018/04/30/my-blog/"  title="my blog">
+<a href="/2018/02/28/移动自适应布局实现/"  title="移动自适应布局实现">
  <strong>旧一篇:</strong><br/> 
- <span>my blog
+ <span>移动自适应布局实现
 </span>
 </a>
 </div>
