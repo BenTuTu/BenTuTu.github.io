@@ -1,325 +1,1431 @@
+<!DOCTYPE html>
 
- <!DOCTYPE HTML>
-<html lang="zh-CN">
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-CN">
 <head>
-  <meta charset="UTF-8">
-  
-    <title>bentutu</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
-    
-    <meta name="author" content="BenTuTu">
-    
-    
-    
-    
-    <link rel="alternative" href="/Tinnypp/atom.xml" title="bentutu" type="application/atom+xml">
-    
-    
-    <link rel="icon" href="/img/favico.ico">
-    
-    
-    <link rel="apple-touch-icon" href="/img/picture.jpg">
-    <link rel="apple-touch-icon-precomposed" href="/img/picture.jpg">
-    
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   
-    <link href="/css/font-awesome.min.css" rel="stylesheet">
-    
   
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
 
-    <link rel="stylesheet" href="/css/style.css">
-    <script>
-var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  hm.src = "//hm.baidu.com/hm.js?d182ed77fc48758bf45a33835ee35745";
-  var s = document.getElementsByTagName("script")[0]; 
-  s.parentNode.insertBefore(hm, s);
-})();
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="bentutu">
+<meta property="og:url" content="http://bentutu.github.io/index.html">
+<meta property="og:site_name" content="bentutu">
+<meta property="og:locale" content="zh-CN">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="bentutu">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
 </script>
 
-      <script type="text/javascript">
-  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
-  (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
-  e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
-  })(window,document,'script','//s.swiftypecdn.com/install/v1/st.js','_st');
 
-  _st('install','.............Add your swiftype userID...............');
-</script>
+
+  <link rel="canonical" href="http://bentutu.github.io/"/>
+
+
+
+
+
+  <title>bentutu</title>
+  
+
+
+
+
+
+
+
+
 </head>
 
-  <body>
-    <header>
-      <div>
-		
-			<div id="textlogo">
-				<h1 class="site-name"><a href="/" title="bentutu">bentutu</a></h1>
-				<h2 class="blog-motto"></h2>
-			</div>
-			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜单">
-			</a></div>
-			<nav class="animated">
-				<ul>
-                    <ul>
-					 
-						<li><a href="https://bentutu.github.io">Home</a></li>
-					
-						<li><a href="/Tinnypp/archives">Archives</a></li>
-					
-					<li>
-					
-						<form class="search" action="/search/index.html" method="get" accept-charset="utf-8">
-						<label>Search</label>
-						<input type="text" id="st-search-inpu" maxlength="20" placeholder="Search" />
-						</form>
-					
-					</li>
-                <!--<li><div class="closeaside"><a class="closebutton" href="#" title="隐藏侧边栏"></a></div></li>-->
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
 
-				</ul>
-			</nav>	
-</div>
-    </header>
-    <div id="container" class="clearfix">
-      
-
-<div id="main">
-
-  <section class="post" itemscope itemprop="blogPost">
-  <article>
-    <h1 itemprop="name">
-      
-        <a href="/2018/05/18/growthDay/" title="每日成长日记" itemprop="url">
-      
-        每日成长日记
-      </a>
-    </h1>
+  
+  
     
-     
-           <p itemprop="description" >2018.5.18 周五
-如何使label里面的input与其垂直居中input {
+  
+
+  <div class="container sidebar-position-left 
+  page-home">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">bentutu</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archives
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+  <section id="posts" class="posts-expand">
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://bentutu.github.io/2018/05/18/growthDay/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="BenTuTu">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="bentutu">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/05/18/growthDay/" itemprop="url">每日成长日记</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-05-18T16:38:10+08:00">
+                2018 5 18
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="2018-5-18-周五"><a href="#2018-5-18-周五" class="headerlink" title="2018.5.18 周五"></a>2018.5.18 周五</h1><ul>
+<li>如何使label里面的input与其垂直居中<pre><code>input {
   vertical-align: middle;
 }
 label {
   vertical-align: middle;
   display: inline-block;
 }
+</code></pre></li>
+</ul>
+<hr>
+<h1 id="2018-5-22-周二"><a href="#2018-5-22-周二" class="headerlink" title="2018.5.22 周二"></a>2018.5.22 周二</h1><ul>
+<li>让一个块级元素固定位置<pre><code>.block {
+  position: fixed;
+  left: ;
+  top: ;
+}
+</code></pre></li>
+<li>在router-link时进行兄弟组件进行传递信息,简单需求如果使用vuex则大题小做<br>– parent<pre><code>&lt;b-component :msg=&quot;fromAComponent&quot;&gt;&lt;/b-component&gt;
+&lt;router-link @message=&quot;getMesg&quot;&gt;&lt;/router-link&gt;
+data() {
+  return {
+  fromAComponent: &#39;&#39;
+  }
+}
+methods:{
+  getMesg(data){
+  fromAComponent = data;
+      console.log(&quot;this data from a-component&quot;);
+  }
+}
+</code></pre>– son<pre><code>&lt;a-component&gt;&lt;/a-component&gt;
+mounted() {
+this.$emit(&quot;message&quot;, &quot;The message you want to transmit&quot;);
+{
+</code></pre>– son b-component<pre><code>props: [&#39;msg&#39;]
+</code></pre></li>
+<li><p>修改input或者其他元素的placeholder字体样式</p>
+<p>  a. input</p>
+<pre><code>  ::-webkit-input-placeholder{
+      color: red;
+      font-size: 20px;
+      line-height: 50px;
+  }
+</code></pre><p>  b. 其他元素</p>
+<pre><code>  元素名::-webkit-input-placeholder{
+      color: red;
+      font-size: 20px;
+      line-height: 50px;
+  }
+</code></pre></li>
+</ul>
+<hr>
+<h1 id="2018-5-23-周三"><a href="#2018-5-23-周三" class="headerlink" title="2018.5.23 周三"></a>2018.5.23 周三</h1><ul>
+<li><p>获取当前路由</p>
+<pre><code>this.$route.path
+</code></pre></li>
+<li><p>v-text与v-html辨析</p>
+<pre><code>a. v-text ==&gt; {{}} 会把绑定的数据解析成文本
 
+b. v-html会把绑定的数据解析成html标签然后输出
+</code></pre></li>
+</ul>
+<hr>
+<h1 id="2018-5-28-周一"><a href="#2018-5-28-周一" class="headerlink" title="2018.5.28 周一"></a>2018.5.28 周一</h1><ul>
+<li>处理时间插件datepicker和dateTimePicker<pre><code>$(&#39;#datetimepicker1&#39;).datetimepicker({  
+      format: &#39;yyyy-mm&#39;,  
+      pickerPosition: &#39;top-right&#39;,
+      language: &#39;zh-CN&#39;
+  });  
+pickerPosition 设置选择器位置
+</code></pre></li>
+<li>基于vue和e-charts的图形处理插件v-charts</li>
+</ul>
+<hr>
+<h1 id="2018-6-1-周五"><a href="#2018-6-1-周五" class="headerlink" title="2018.6.1 周五"></a>2018.6.1 周五</h1><ul>
+<li>faraday slidemenu的修复以及部分jQuery ==&gt; vue</li>
+<li><p>渐变的css实现</p>
+<p>  1.线性渐变</p>
+<pre><code>  1.1默认从上到下direction(left，right，left top，right bottom)
 
+      ```
+      background: linear-gradient(direction, color-stop1, color-stop2, ...);
+      ```
+  1.2角度旋转渐变
+      ```
+      background: linear-gradient(angle, color-stop1, color-stop2);
+      ```
+</code></pre></li>
+<li>设置多个颜色<pre><code>  background: linear-gradient(color-stop0, color-stop1, color-stop2, ...);
+</code></pre></li>
+<li>使用透明度设置渐变效果<pre><code>  background: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1)); /* 标准的语法 */
+</code></pre></li>
+<li>重复的线性渐变<pre><code>  background: repeating-linear-gradient(red, yellow 10%, green 20%);
+</code></pre></li>
+<li>css径向渐变<pre><code>  background: radial-gradient(center, shape size, start-color, ..., last-color);
+</code></pre></li>
+<li>设置形状和大小的渐变shape(circle, ellipse)size(closest-side, farthest,closest-corner,farthest-corner)<pre><code>  background: radial-gradient(center, shape size, start-color, ..., last-color);
+</code></pre></li>
+</ul>
+<hr>
+<h1 id="2018-6-2-周六"><a href="#2018-6-2-周六" class="headerlink" title="2018.6.2 周六"></a>2018.6.2 周六</h1><ul>
+<li><p>Ajax原理的实现</p>
+<ol>
+<li>创建Ajax对象，对特殊浏览器ie6进行适配<pre><code> if(XMLHttpRequest){
+     var ajax = new XMLHttpRequest();
+ }else {
+     var ajax = new ActiveXObject(&quot;Microsoft.XMLHTTP&quot;); 
+ }
+</code></pre></li>
+<li>与服务器建立连接<pre><code> ajax.open(&quot;获取的方式(GET,POST,PUTE,DELETE,UPDATE)&quot;, &quot;文件名&quot;, 是否异步(true or false));
+</code></pre></li>
+<li>发送请求<pre><code> ajax.send();
+</code></pre></li>
+<li>接收返回<pre><code> ajax.onreadystatechange = function() {
+     返回的数据获取
+ }
+</code></pre></li>
+</ol>
+</li>
+<li><p>Python爬虫入门</p>
+<ol>
+<li>xpath和requests进行HTML文件的获取；</li>
+<li>beautifulsoup对文档进行有效信息的选择；</li>
+<li>使用“非关系型数据库mongodb”对数据进行存储；</li>
+</ol>
+</li>
+</ul>
+<h1 id="2018-6-4-周一"><a href="#2018-6-4-周一" class="headerlink" title="2018.6.4 周一"></a>2018.6.4 周一</h1><ul>
+<li>icheck对CheckBox和radio的美化</li>
+<li>重构界面组件化的拆分</li>
+<li>配置和数据映射带来的代码优化</li>
+<li></li>
+</ul>
+<hr>
+<h1 id="2018-6-25-周一"><a href="#2018-6-25-周一" class="headerlink" title="2018.6.25 周一"></a>2018.6.25 周一</h1><ul>
+<li><p>td标签对其内部文字进行换行</p>
+<ul>
+<li><p>word-wrap:设置或检索当当前行超过指定容器的边界时是否断开转行<br>取值： </p>
+<p>  normal :　 默认值。允许内容顶开指定的容器边界 </p>
+<p>  break-word :　 内容将在边界内换行。如果需要，词内换行( word-break )也将发生</p>
+</li>
+<li><p>word-break:设置或检索对象内文本的字内换行行为。尤其在出现多种语言时 </p>
+<p>  取值 </p>
+<p>  normal :　 默认值。允许在词间换行 </p>
+<p>  break-all :　 该行为与亚洲语言的 normal 相同。也允许非亚洲语言文本行的任意字内断开。该值适合包含一些非亚洲文本的亚洲文本 </p>
+<p>  keep-all :　 与所有非亚洲语言的 normal 相同。对于中文，韩文，日文，不允许字断开。适合包含少量亚洲文本的非亚洲文本</p>
+</li>
+</ul>
+</li>
+<li><p>vue的filters的使用</p>
+<pre><code>  1. 
+  (abd | myMethod(key))
+  2. v-model=&quot;abd | myMethod(key)&quot;
 
-2018.</p>
+  filters: {
+      myMethod(value, key) {
+          处理代码块
+      }
+  }
+</code></pre></li>
+<li>映射关系在视觉上代码量少很多，进行开发的时候需要对其进行良好的说明，使后来合作者或者迭代者能够很好的维护和阅读</li>
+<li>在filters里面最好不要调用method里面的函数或者异步获取后端数据（做请求）</li>
+</ul>
+<hr>
+<h1 id="2018-7-10-周二"><a href="#2018-7-10-周二" class="headerlink" title="2018.7.10 周二"></a>2018.7.10 周二</h1><ul>
+<li>class和style支持的动态绑定适用于数组、对象，在对他进行判断或者处理时可以很好的结合计算属性进行处理；</li>
+<li>动态绑定style时，会对其浏览器的类型自动添加前缀，很多css属性，如：transform、text-shadow等；</li>
+<li>vue会高效的复用相同的组件，这是一种很好的减少渲染的技巧，当我们需要不复用的时候我们只需要在我们想要的元素加上不同的key值就能达到效果；</li>
+<li>v-if和v-show都能达到影藏的效果，v-if可以使用v-else-if、v-else进行多级判断，也能使用在<template>中，v-show则不然；</template></li>
+</ul>
+<hr>
+<h1 id="2018-7-11-周三"><a href="#2018-7-11-周三" class="headerlink" title="2018.7.11 周三"></a>2018.7.11 周三</h1><ul>
+<li>input标签的@blur事件在输入框失去焦点时展示提示消息</li>
+<li><p>vue将表格数据导出Excel(下载好Blob.js和Export2Excel.js放在vendor文件夹下),在build—-webpack.base.conf.js中resolve的alias加入 ‘vendor’: path.resolve(__dirname, ‘../src/vendor’),</p>
+<pre><code>      npm install -S file-saver xlsx
+      npm install -D script-loader
+</code></pre><p>  导出Excel的两个方法（函数）：</p>
+<pre><code>      export2excel() {
+          require.ensure([], () =&gt; {
+             const { export_json_to_excel } = require(&#39;../../vendor/Export2Excel&#39;);
+             const tHeader = [&#39;&#39;, &#39;&#39;, &#39;&#39;];//表头信息数组
+             const filterVal = [&#39;&#39;, &#39;&#39;, &#39;&#39;];//对应表头数据的key
+             const list = this.tableData;//表头数据
+             const data = this.formatJson(filterVal, list);
+             export_json_to_excel(tHeader, data, &quot;Excel的文件名&quot;);
+          });
+      }
+
+      formatJson(filterVal, jsonData){
+          return jsonData.map(v =&gt; filterVal.map(j =&gt; v[j]);
+      }
+</code></pre></li>
+<li><p>父组件向子组件传递数据时，当时静态数据子组件可以直接获取，当父组件通过异步请求后端数据时，需要在子组件中使用watch监听数据的改变，根据导致的问题暂且理解为数组的引用赋值导致的：</p>
+<pre><code>      var a = [];//父组件的data中
+      var a = b; //b为父组件异步请求的数据
+      var c = a;//c子组件的props
+</code></pre></li>
+</ul>
+<hr>
+<h1 id="2018-7-23-周一"><a href="#2018-7-23-周一" class="headerlink" title="2018.7.23 周一"></a>2018.7.23 周一</h1><ul>
+<li>warmserver添加php7.2版本出现track_eror:在php.init文件中将display_error=Off;</li>
+<li>laravel框架验证注册和登录使用Auth的学习；</li>
+<li>框架也实现很多功能如自动生成测试种子数据；</li>
+</ul>
+<hr>
+<h1 id="2018-7-24-周二"><a href="#2018-7-24-周二" class="headerlink" title="2018.7.24 周二"></a>2018.7.24 周二</h1><ul>
+<li>koa的cookie不能直接设置中文需要借助Buff类转换为base64进行处理；</li>
+<li>vue的session通过服务器创建，在第一次请求时服务器将key作为cookie传给客户端，服务器再次请求将自动带上此cookie，这时服务器通过此key值将session中的value传给客户端；</li>
+<li>vue中的过滤器不能直接在内部获取data中的数据和methods中的方法，需要获取data实例中的数据一种是通过Vue的实例获取（用的少）另外一种则是在过滤器中直接通过参数传递即可；</li>
+</ul>
+<hr>
+<h1 id="2018-7-25-周三"><a href="#2018-7-25-周三" class="headerlink" title="2018.7.25 周三"></a>2018.7.25 周三</h1><ul>
+<li><p>行内filter</p>
+<pre><code>  &lt;template&gt;
+      &lt;div :style=&quot;{color:$options.filters.txtToColor(msg)}&quot;&gt;&lt;/div&gt;
+      &lt;!-- 行内filter --&gt;
+  &lt;/template&gt;
+
+  import { txtToColor } from &#39;/path/to/filters.js&#39;
+      export default {
+          name:&#39;a&#39;,
+          data(){
+              return{
+                  msg:123,
+                  obj:{
+                      msg:321
+                  }
+              }
+          },
+          filters:{
+              txtToColor
+          },
+          watch:{
+              &#39;obj.msg&#39;(newV,oldV){ //监听对象里的属性
+
+              }
+          }
+      }
+</code></pre></li>
+<li><p>配置打包后项目放在服务器哪个目录后</p>
+<pre><code>  const router = new Router({
+      //此处可以利用node环境变量来设置打包后项目放在服务器某个目录后，路由的根路径配置
+      base: process.env.NODE_ENV===&#39;development&#39;?&#39;/&#39;:&#39;/some/dir/&#39;,
+      //...routes
+  });
+  //很多人把beforeEach写到main.js
+  router.beforeEach((from,to,next)=&gt;{
+      //...某些拦截操作，是否登录权限等
+      next()
+  });
+</code></pre></li>
+<li><p>每一层子路由，就需要多一层router-view，如果只是希望浏览器的url作为语义，可以使用alias</p>
+<pre><code>  const router = new Router({
+      routes:[
+          {
+              path:&#39;/a&#39;,
+              component:A,
+              children:[
+                  {
+                      path:&#39;c&#39;,
+                  }
+              ]
+          },
+          {
+              path:&#39;/b&#39;,
+              component:B,
+              alias:&#39;/a/c&#39;//这样当路径为/a/c时  页面显示为B，router-view也会对应根路由
+          }
+      ]
+  });
+</code></pre></li>
+<li><p>js懒加载</p>
+<pre><code>  //router.js
+  const router = new Router({
+      routes:[
+          {
+              path:&#39;/a&#39;,
+              component:()=&gt;import(&#39;path/to/A.vue&#39;)
+          }
+      ]
+  });
+  //package.json
+  &quot;devDependencies&quot;:{
+      //...
+      &quot;babel-plugin-syntax-dynamic-import&quot;: &quot;^6.18.0&quot;
+      //...
+  }
+  //.babelrc
+  &quot;plugins&quot;:[&quot;syntax-dynamic-import&quot;]
+</code></pre></li>
+<li><p>vuex一个状态(数据)管理官方插件，高效管理全局数据，并且注入vue实例，让所有组件可以轻松读写全局数据，让所有组件直接共享状态完成通信。</p>
+<pre><code>   strict:process.env.NODE_ENV===&quot;development&quot;,//开发环境开启严格模式
+   //***.vue
+  import {mapState,mapAction,mapMutation} from &#39;vuex&#39;
+  //将vuex的方法注入到组件中，使用更方便
+  export default {
+      computed:{
+          ...mapState(&#39;moduleA&#39;,{
+              test1:&#39;test&#39;
+          }),
+          ...mapState({//vuex的根状态
+              test2:&#39;test&#39;
+          })
+      },
+      method:{
+          ...mapMutation(&#39;moduleA&#39;,{
+              testCommit1:&quot;testCommit&quot;
+          }),
+          ...mapMutation({
+              testCommit2:&quot;testCommit&quot;
+          })
+          ...mapAction(&#39;moduleA&#39;,{
+              testAction1:&quot;testAction&quot;
+          }),
+          ...mapAction({
+              testAction2:&quot;testAction&quot;
+          })
+      },
+      mounted(){
+          this.testCommit1();//===this.$store.commit(&#39;moduleA/testCommit&#39;)
+          this.testCommit2();//===this.$store.commit(&#39;testCommit&#39;)
+          this.testAction1();//===this.$store.dispatch(&#39;moduleA/testAction&#39;)
+          this.testAction2();//===this.$store.dispatch(&#39;testAction&#39;)
+      }
+  }
+</code></pre></li>
+<li><p>组件的缓存，内部的常用钩子函数也不会执行，只有利用专用的2个钩子去处理缓存的组件逻辑。</p>
+<pre><code>  export default{
+      activated(){
+          //唤醒时
+      },
+      deactivated(){
+          //睡眠时
+      }
+  }
+</code></pre></li>
+<li><p>记录常用的node包</p>
+<p>  @tweenjs/tween.js 一个js动画库</p>
+<p>  axios 支持promise的http库</p>
+<p>  qs 数据格式转换插件，配合axios使用</p>
+<p>  crypto-js 各种加密，没什么实际安全作用</p>
+<p>  prismjs 语法高亮插件</p>
+<p>  vue-lazyload 图片懒加载，功能很全</p>
+<p>  vue-meta 组件中动态修改head标签里面的内容</p>
+<p>  babel-plugin-equire echarts按需加载插件，优化写法，默认会携带指定版本的echarts，建议自行安装需要的版本覆盖</p>
+<p>  webpack-bundle-analyzer 打包完成后显示体积相关信息，可以了解是否重复加载,哪些文件过大等</p>
+<p>  以上来源：</p>
+<ul>
+<li>作者：chavesgu</li>
+<li>链接：<a href="https://juejin.im/post/5b56981b6fb9a04fd4509b76" target="_blank" rel="noopener">https://juejin.im/post/5b56981b6fb9a04fd4509b76</a></li>
+<li>来源：掘金</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h1 id="2018-8-1-周三"><a href="#2018-8-1-周三" class="headerlink" title="2018.8.1 周三"></a>2018.8.1 周三</h1><ul>
+<li><p>js表格排序</p>
+<ul>
+<li>对列名绑定事件</li>
+<li>获取列名对排序desc进行判断</li>
+<li><p>使用sort对其排序</p>
+<pre><code>  changeSortByColumn(columnName) {
+      if(columnName === this.sortColumn) {
+          this.desc = !this.desc;
+      }else {
+          this.sortColumn = columnName;
+          this.desc = true;
+      }
+      this.sortByColumn(this.tableData);
+  }
+
+  sortByColumn(data) {
+      return data.sort(keysrt(this.sortColumn, this.desc));
+  }
+
+  keysrt(key, desc) {
+      return function (a, b) {
+          if(desc) {
+              if(a[key] &gt; b[key]) {
+                  return 1;
+              }else if(a[key] &lt; b[key]) {
+                  return -1;
+              }else {
+                  return 0;
+              }
+          }else {
+              if(a[key] &gt; b[key]) {
+                  return -1;
+              }else if(a[key] &lt; b[key]) {
+                  return 1;
+              }else {
+                  return 0;
+              }
+          }
+      }
+  }
+</code></pre></li>
+</ul>
+</li>
+<li>开始着手于基于koa-vue-reactnative构建一个前后端系统</li>
+</ul>
+<hr>
+<h1 id="2018-8-16-周四"><a href="#2018-8-16-周四" class="headerlink" title="2018.8.16 周四"></a>2018.8.16 周四</h1><ul>
+<li><p>阿里云服务器部署（Windows 2008 server）</p>
+<ul>
+<li>购买完毕设置远程连接此时需要打开gpedit.msc，打不开的则直接打开注册表运行regedit，然后找到HKEY_LOCAL_MACHINE/software/microsoft/windows/currentversion/policies/system/credssp/parameters/AllowEncryptionOracle设置值为2；</li>
+<li>安装warmserver之前需要安装visual studio update不然会报找出到找不到一个dll文件；</li>
+<li>在warmserver的www中部署项目部署完毕需要添加alias方能生效；</li>
+<li>对服务器的防火墙进行设置，外网的配置中设置允许访问；</li>
+<li>对Apache进行请求设置，设置为允许所有请求默认为local；</li>
+<li>先在内网对项目进行测试访问，成功则将localhost替换为服务器ip或者域名即可。</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h1 id="2018-10-13-周二"><a href="#2018-10-13-周二" class="headerlink" title="2018.10.13 周二"></a>2018.10.13 周二</h1><ul>
+<li><p>关于js64位浮点类型：</p>
+<ul>
+<li>符号位1位；</li>
+<li>指数位11位；</li>
+<li>小数位52位，其中小数位不包括1.xxxx之中的1.</li>
+</ul>
+</li>
+<li><p>修改谷歌浏览器默认的scrollbar：</p>
+<pre><code>  ::-webkit-scrollbar {
+      /*滚动条整体样式*/
+      width: 6px;
+      /*高宽分别对应横竖滚动条的尺寸*/
+      height: 1px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+      /*滚动条里面小方块*/
+      border-radius: 10px;
+      box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+      -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+      background: #f2f2f2;
+  }
+
+  ::-webkit-scrollbar-track {
+      /*滚动条里面轨道*/
+      display: none;
+  }
+</code></pre></li>
+<li><p>webpack的require.context统一导入模块：</p>
+<pre><code>  let repAll = require.context(&#39;./&#39;, false, &#39;/\.js/g&#39;);
+  let modules = reqAll.keys().map(reqAll);
+</code></pre></li>
+<li><p>HTML的5个转义字符：</p>
+<ul>
+<li>HTML的&lt; &gt;&amp;&quot;&copy;分别是&lt;，&gt;，&amp;，”，©;的转义字符</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h1 id="2018-12-28-周五"><a href="#2018-12-28-周五" class="headerlink" title="2018.12.28 周五"></a>2018.12.28 周五</h1><ul>
+<li><p>移动端适配</p>
+<ul>
+<li>三个关键指标：pageX/Y、clientX/Y、screenX/Y;</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h1 id="2018-1-2-周二"><a href="#2018-1-2-周二" class="headerlink" title="2018.1.2 周二"></a>2018.1.2 周二</h1><ul>
+<li>关于z-index的层级关系，一共有七个层级：border和background、负值、块级元素、浮动元素、行内元素、z-index为0、zindex为正值；</li>
+<li>关于层叠层和层叠上下文，当对元素设置了定位属性就会创建一个层叠上下文，每个层叠上下文互不影响，其内部的元素也没有可比性；</li>
+<li>对于可变的状态需要小心多加考虑；</li>
+</ul>
+<hr>
+<h1 id="2019-6-18"><a href="#2019-6-18" class="headerlink" title="2019.6.18"></a>2019.6.18</h1><ul>
+<li>关于table的td限制宽度的问题：可以在td里面加一个行内元素然后设置宽度以及word-break:break-word/break-all;</li>
+<li>angular英雄列表项目实践；</li>
+<li>父子组件传值；</li>
+<li>rpa（机器流程自动化）</li>
+</ul>
+
+          
         
-    
-    <p class="article-more-link">
-      <time datetime="2018-05-18T08:38:10.703Z" itemprop="datePublished">2018 5 18</time>
       
-          <a href="/2018/05/18/growthDay/">read more&raquo;</a>
-      
-    </p>
-
-  </article>
-</section>
-
-  <section class="post" itemscope itemprop="blogPost">
-  <article>
-    <h1 itemprop="name">
-      
-        <a href="/2018/02/28/移动自适应布局实现/" title="移动自适应布局实现" itemprop="url">
-      
-        移动自适应布局实现
-      </a>
-    </h1>
-    
-     
-           <p itemprop="description" >一、使用easy mock模拟数据   
-   easy mock链接地址
-二、自己写移动自适应布局
-自己编写主要是利用rem进行宽度栅格布局：
- html {
-      /* 相当于一个界面适配器，pc以及移动端都可以进行设置 */
-      font-size: 37.5</p>
-        
-    
-    <p class="article-more-link">
-      <time datetime="2018-02-28T08:08:32.296Z" itemprop="datePublished">2018 2 28</time>
-      
-          <a href="/2018/02/28/移动自适应布局实现/">read more&raquo;</a>
-      
-    </p>
-
-  </article>
-</section>
-
-  <section class="post" itemscope itemprop="blogPost">
-  <article>
-    <h1 itemprop="name">
-      
-        <a href="/2018/01/18/hexo-grammar/" title="Hexo grammar" itemprop="url">
-      
-        Hexo grammar
-      </a>
-    </h1>
-    
-     
-           <p itemprop="description" >Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the </p>
-        
-    
-    <p class="article-more-link">
-      <time datetime="2018-01-18T06:44:51.222Z" itemprop="datePublished">2018 1 18</time>
-      
-          <a href="/2018/01/18/hexo-grammar/">read more&raquo;</a>
-      
-    </p>
-
-  </article>
-</section>
-
-
-</div>
-      <div id="asidepart">
-<div id="authorInfo">
-	
-		<div class="author-logo"></div>		
-	
-	
-	<section class="author-info">
-		
-			<p> BenTuTu</p>
-		
-		
-			<p>	coding and sports</p>
-		
-	</section>
-	 
-	<div class="social-font" class="clearfix">
-		
-		
-		
-		<a href="https://github.com/bentutu" target="_blank" title="github"></a>
-		
-		
-	</div>
-</div>
-<aside class="clearfix">
-
-
-  
-
-  
-
-  <div class="rsspart">
-	<a href="/Tinnypp/atom.xml" target="_blank" title="rss">RSS 订阅</a>
-</div>
-
-  
-
-  
-
-</aside>
-</div>
     </div>
-    <footer><div id="footer" >
-	<div class="copyright">
-		<p>Go to his github ,please click here</p>
-		<a href="https://github.com/bentutu">bentutu</a>.</span>
-		
-			<span>© BenTuTu</span>
-		
-	<div>
-</div></footer>
-    <script src="/js/jquery-2.1.0.min.js"></script>
-<script type="text/javascript">
-$(document).ready(function(){ 
-  //back to top
-  function backToTop(){
-    var buttonHTML = $("<a href=\"#top\" id=\"back-top\">" + "<span>Back to Top</span></a>");
-    buttonHTML.appendTo($("body"));
-    var buttonToTop = $("#back-top");
-    // hide #back-top first
-    buttonToTop.hide();
+    
+    
+    
 
-    // fade in #back-top
-    $(function() {
-        $(window).scroll(function() {
-            if ($(this).scrollTop() > 200) {
-                buttonToTop.fadeIn();
-            } else {
-                buttonToTop.fadeOut();
-            }
-        });
-        // scroll body to 0px on click
-        buttonToTop.click(function() {
-            $('body,html').animate({
-                scrollTop: 0
-            }, 800);
-            return false;
-        });
-    });
-  }
-  backToTop();
+    
 
-  $('.navbar').click(function(){
-    $('header nav').toggleClass('shownav');
-  });
-  var myWidth = 0;
-  function getSize(){
-    if( typeof( window.innerWidth ) == 'number' ) {
-      myWidth = window.innerWidth;
-    } else if( document.documentElement && document.documentElement.clientWidth) {
-      myWidth = document.documentElement.clientWidth;
-    };
-  };
-  var m = $('#main'),
-      a = $('#asidepart'),
-      c = $('.closeaside'),
-      ta = $('#toc.toc-aside');
-  $(window).resize(function(){
-    getSize(); 
-    if (myWidth >= 1024) {
-      $('header nav').removeClass('shownav');
-    }else
-    {
-      m.removeClass('moveMain');
-      a.css('display', 'block').removeClass('fadeOut');
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://bentutu.github.io/2018/02/28/移动自适应布局实现/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="BenTuTu">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="bentutu">
+    </span>
+
+    
+      <header class="post-header">
+
         
-    }
-  });
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/02/28/移动自适应布局实现/" itemprop="url">移动自适应布局实现</a></h1>
+        
 
-  var show = true;
-  c.click(function(){
-    if(show == true){
-        a.addClass('fadeOut').css('display', 'none');
-        ta.css('display', 'block').addClass('fadeIn');
-        m.addClass('moveMain');  
-    }else{
-        a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');     
-        ta.css('display', 'none'); 
-        m.removeClass('moveMain');
-        $('#toc.toc-aside').css('display', 'none');
-    }
-    show = !show;
-  });
-});
-</script>
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-02-28T16:08:32+08:00">
+                2018 2 28
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="一、使用easy-mock模拟数据"><a href="#一、使用easy-mock模拟数据" class="headerlink" title="一、使用easy mock模拟数据"></a>一、使用easy mock模拟数据</h1>   
+<p>   <a href="http://www.easy-mock.com/mock/5a09aaeb7b68855a07f77882/ajaxWriterData/getWriterData" target="_blank" rel="noopener">easy mock链接地址</a></p>
+<h1 id="二、自己写移动自适应布局"><a href="#二、自己写移动自适应布局" class="headerlink" title="二、自己写移动自适应布局"></a>二、自己写移动自适应布局</h1><ul>
+<li><p>自己编写主要是利用rem进行宽度栅格布局：</p>
+<pre><code> html {
+      /* 相当于一个界面适配器，pc以及移动端都可以进行设置 */
+      font-size: 37.5px;
+  }
+
+  .box, .box1, .box2 {
+      /* rem为相对单位 适用于移动开发 相对于根源即为html */
+      width: 10rem;
+      height: 3rem;
+      background-color: red;
+  }
+
+  .box1 {
+      background-color: blue;
+      width: 3rem;
+  }
+
+  .box2 {
+      width: 7rem;
+      background-color: pink;
+  }
+   .box1, .box2 {
+       /* inline 元素不能设置宽高 */
+       /* bug与旁边元素会有一些间隙 例如换行 */
+       display: inline-block;
+   }
+</code></pre></li>
+<li><p>body盒子的摆放：</p>
+<pre><code>  &lt;div class=&quot;box&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;box1&quot;&gt;&lt;/div&gt;&lt;div class=&quot;box2&quot;&gt;&lt;/div&gt;         
+</code></pre><p>   <strong> 注意:此时的box1和box2需要中间没有缝隙也就是空格换行等都不能出现，如果出现则出现不能实现</strong><br>   <strong>      自动适应布局的要求，这个可以用代码自己实现一下效果。</strong></p>
+<ul>
+<li><p>效果图：<br>  <img src="https://github.com/BenTuTu/BenTuTu.github.io/tree/master/images/zzpic11760_s.jpg" alt=""></p>
+<p>变大时效果：</p>
+<p><img src="/2018/02/28/移动自适应布局实现/img" alt="picture.jpg"></p>
+</li>
+</ul>
+</li>
+</ul>
+<p>#js实现掘金个人文章的简单移动布局：</p>
+<ul>
+<li><p>js框架</p>
+<pre><code>   &lt;script src=&quot;http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??    
+   flexible_css.js,flexible.js&quot;&gt;&lt;/script&gt;
+</code></pre></li>
+<li><p>界面布局：</p>
+<pre><code>  &lt;div id=&quot;app&quot;&gt;
+  &lt;div class=&quot;authordmassage&quot; id=&quot;authord&quot;&gt;
+      &lt;img src=&quot;&quot; alt=&quot;&quot; class=&quot;authordphoto&quot;&gt;
+      &lt;a href=&quot;&quot;&gt;&lt;/a&gt;
+      &lt;span id=&quot;authordid&quot; class=&quot;authordidclass&quot;&gt;&lt;/span&gt;
+      &lt;span id=&quot;allcontent&quot; class=&quot;allcontentclass&quot;&gt;&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;authorartical&quot; id=&quot;mainlib&quot;&gt;
+      &lt;ul&gt;
+          &lt;li id=&quot;passageimage1&quot;&gt;
+              &lt;img src=&quot;&quot; alt=&quot;&quot;&gt;
+              &lt;a href=&quot;&quot;&gt;&lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li id=&quot;passageimage2&quot; class=&quot;passageimage2&quot;&gt;
+              &lt;img src=&quot;&quot; alt=&quot;&quot;&gt;
+              &lt;a href=&quot;&quot;&gt;&lt;/a&gt;
+          &lt;/li&gt;
+      &lt;/ul&gt;
+  &lt;/div&gt;
+  &lt;/div&gt;
+</code></pre></li>
+<li><p>使用jquery实现数据获取和用级联设置获取的数据到前台显示：</p>
+<pre><code>  ```$(function () {
+      $.getJSON(&quot;http://www.easy-mock.com/mock/5a09aaeb7b68855a07f77882/ajaxWriterData/getWriterData&quot;, function (data) {
+          console.log(data.data.passageImage.imageone);
+          $(&#39;#authord&#39;).find(&#39;img&#39;).attr(&#39;src&#39;, data.data.author.avatar);
+          $(&#39;#authord&#39;).find(&#39;a&#39;).text(data.data.author.authorname);
+          $(&#39;#authord&#39;).find(&#39;#authordid&#39;).text(data.data.author.authorID);
+          $(&#39;#authord&#39;).find(&#39;#allcontent&#39;).text(data.data.author.allcontent);
+          // console.log($(&#39;#mainlib&#39;).find(&#39;ul&#39;).find(&#39;li&#39;).find(&#39;#passageimage1&#39;));
+          //获取文章信息
+          $(&#39;#mainlib&#39;).find(&#39;ul&#39;).find(&#39;#passageimage1&#39;).find(&#39;a&#39;).text(data.data.artical[0].title);
+          $(&#39;#mainlib&#39;).find(&#39;ul&#39;).find(&#39;#passageimage1&#39;).find(&#39;img&#39;).attr(&#39;src&#39;, data.data.passageImage.imageone);
+          $(&#39;#mainlib&#39;).find(&#39;ul&#39;).find(&#39;#passageimage2&#39;).find(&#39;a&#39;).text(data.data.artical[1].title);
+          $(&#39;#mainlib&#39;).find(&#39;ul&#39;).find(&#39;#passageimage2&#39;).find(&#39;img&#39;).attr(&#39;src&#39;, data.data.passageImage.imagetwo);
+          })
+      })```
+</code></pre></li>
+<li><p>效果图：</p>
+</li>
+</ul>
+<pre><code>   ![clipboard.png](/img/bVYFCd)
+</code></pre><ul>
+<li>文件：<pre><code>  &lt;script src=&quot;https://cdn.bootcss.com/jquery/3.2.1/jquery.js&quot;&gt;&lt;/script&gt;
+ [jquery文件版本下载地址][2]    
+</code></pre><strong> 此次的关于移动端自适应学习和分享就是这些，望看到的伙伴和学者一起学习和提出你们宝贵的建议 </strong></li>
+</ul>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://bentutu.github.io/2018/01/18/hexo-grammar/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="BenTuTu">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="bentutu">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/01/18/hexo-grammar/" itemprop="url">Hexo grammar</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-01-18T14:44:51+08:00">
+                2018 1 18
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre><code class="bash">$ hexo new &quot;My New Post&quot;
+</code></pre>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre><code class="bash">$ hexo server
+</code></pre>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre><code class="bash">$ hexo generate
+</code></pre>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre><code class="bash">$ hexo deploy
+</code></pre>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+  </section>
+
+  
+
+
+          </div>
+          
+
+
+          
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">BenTuTu</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">BenTuTu</span>
+
+  
+</div>
+
+
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
 
 
 
 
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
 
 <script type="text/javascript">
-  function footerPosition() {
-    var contentHeight = document.documentElement.scrollHeight,
-        winHeight = window.innerHeight;
-    if(contentHeight <= winHeight) {
-      $('footer').addClass('fixed-bottom');
-    } else {
-      $('footer').removeClass('fixed-bottom');
-    }
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
   }
-  footerPosition();
-  $(window).resize(footerPosition);
 </script>
 
 
-  </body>
- </html>
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
